@@ -1,8 +1,8 @@
 import cv2
 
 #MODELS_PARAMS
-BALL_MODEL_PATH = "/git/ball/model/ball.onnx"
-CAT_BOOST_MODEL_PATH = "/Users/pasha/Data_stat/git/ball/model/catboost_ball_model.cbm"
+BALL_MODEL_PATH = "model/ball.onnx"
+CAT_BOOST_MODEL_PATH = "model/catboost_ball_model.cbm"
 
 INPUT_W = 512
 INPUT_H = 288
@@ -12,8 +12,8 @@ SEQ_LEN = 9
 Probability = 0.8
 
 #VIDEO_PARAMS
-INPUT_VIDEO_PATH = "/Users/pasha/Data_stat/git/all_video/short_test.mp4"
-OUTPUT_VIDEO_PATH = f"/Users/pasha/Data_stat/git/all_video/result_traks_and_videos/debugging/with_catboost_p08/short_video_test/short_test_5_with_catboost_in_all_track.mp4"
+INPUT_VIDEO_PATH = "all_video/video_name.mp4"
+OUTPUT_VIDEO_PATH = "all_video/result_traks_and_videos/video_name.mp4"
 
 cap = cv2.VideoCapture(INPUT_VIDEO_PATH)
 
@@ -27,4 +27,4 @@ GAP_WITHOUT_CONFIRMED = 5
 LEN_MAX_TRACK = 15
 
 #JSON_PARAMS
-JSON_SAVE_TRACK_PATH = f"/Users/pasha/Data_stat/git/all_video/result_traks_and_videos/debugging/with_catboost_p08/short_video_test/short_test_5_with_catboost_in_all_track.json"
+JSON_SAVE_TRACK_PATH = "all_video/result_traks_and_videos/json_name.json"
