@@ -76,12 +76,8 @@ while cap.isOpened():
         main_id = tracker.select_main_ball(all_track)
 
         if main_id is not None:
-            print(main_id)
 
             catboost_track = feature_generation.feature_generator(all_track[main_id])
-            print("#" * 10)
-            print(catboost_track)
-            print("#"*10)
 
             if len(all_track[main_id]["x"]) >= 2:
 
@@ -90,9 +86,6 @@ while cap.isOpened():
 
             else:
                 is_a_ball = False
-
-            print(is_a_ball)
-            print("-"*100)
 
             if is_a_ball:
 

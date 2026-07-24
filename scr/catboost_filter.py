@@ -49,7 +49,5 @@ def cat_boost_filter(catboost_track: CatBoostTrack, model: catboost.core.CatBoos
     '''
 
     prediction, probability = cat_boost_inference(model, catboost_track)
-    print(prediction)
-    print(probability)
 
     return probability[0][1] >= P
