@@ -2,7 +2,7 @@ import onnxruntime as ort
 import numpy as np
 import cv2
 
-from git.ball.scr.MyTypes import Detection
+from MyTypes import Detection
 
 
 def load_model(model_path: str) -> ort.InferenceSession:

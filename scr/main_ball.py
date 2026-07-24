@@ -1,8 +1,7 @@
 import cv2
 import time
-import sys
 
-from git.ball.scr import config, tracker, detection, catboost_filter, feature_generation, tools
+from scr import config, tracker, detection, catboost_filter, feature_generation, tools
 
 
 cap = cv2.VideoCapture(config.INPUT_VIDEO_PATH)

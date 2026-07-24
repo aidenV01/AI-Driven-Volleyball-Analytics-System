@@ -1,6 +1,6 @@
 import numpy as np
 
-from git.ball.scr.MyTypes import Track, CatBoostTrack
+from scr.MyTypes import Track, CatBoostTrack
 
 
 def track_length (track: Track) -> int:

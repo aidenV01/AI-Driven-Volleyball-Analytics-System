@@ -3,7 +3,7 @@ import numpy as np
 import time
 import sys
 
-from git.ball.scr.MyTypes import Detection, Track
+from scr.MyTypes import Detection, Track
 
 def track_drawing(frame: np.ndarray, track: Track, track_id: int) -> np.ndarray:
 
